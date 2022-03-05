@@ -1,0 +1,21 @@
+import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from './components/redux/store';
+import './App.css';
+import CakeContainer from './components/CakeContainer';
+import HooksCakeContainer from './components/HooksCakeContainer';
+import IcecreamContainer from './components/IcecreamContainer';
+
+function App() {
+  return (
+    <Provider store={store}>
+    <div className="App">
+      <CakeContainer />
+      <HooksCakeContainer />
+      <IcecreamContainer />
+    </div>
+    </Provider>
+  );
+}
+
+export default App;
